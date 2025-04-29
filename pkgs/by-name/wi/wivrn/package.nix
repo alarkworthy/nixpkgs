@@ -157,7 +157,7 @@ stdenv.mkDerivation (finalAttrs: {
       (lib.cmakeBool "WIVRN_USE_X264" true)
       (lib.cmakeBool "WIVRN_USE_PIPEWIRE" true)
       (lib.cmakeBool "WIVRN_USE_PULSEAUDIO" true)
-      (lib.cmakeBool "WIVRN_FEATURE_STEAMVR_LIGHTHOUSE" true)
+      (lib.cmakeBool "WIVRN_FEATURE_STEAMVR_LIGHTHOUSE" false)
       (lib.cmakeBool "WIVRN_BUILD_CLIENT" false)
       (lib.cmakeBool "WIVRN_BUILD_DASHBOARD" true)
       (lib.cmakeBool "WIVRN_CHECK_CAPSYSNICE" false)
