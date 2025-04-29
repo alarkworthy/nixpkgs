@@ -50,14 +50,14 @@
   xrizer,
 }:
 stdenv.mkDerivation (finalAttrs: {
-  pname = "wivrn";
-  version = "0.24.1";
+  pname = "wivrnsolar";
+  version = "solarXR";
 
   src = fetchFromGitHub {
-    owner = "wivrn";
-    repo = "wivrn";
-    rev = "v${finalAttrs.version}";
-    hash = "sha256-aWQcGIrBoDAO7XqWb3dQLBKg5RZYxC7JxwZ+OBSwmEs=";
+    owner = "notpeelz";
+    repo = "WiVRn";
+    rev = "bad7d792039f7509522de865fd2905807f3d2b8e";
+    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
   };
 
   monado = applyPatches {
@@ -65,8 +65,8 @@ stdenv.mkDerivation (finalAttrs: {
       domain = "gitlab.freedesktop.org";
       owner = "monado";
       repo = "monado";
-      rev = "848a24aa106758fd6c7afcab6d95880c57dbe450";
-      hash = "sha256-+rax9/CG/3y8rLYwGqoWJa4FxH+Z3eREiwhuxDOUzLs=";
+      rev = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
+      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
     };
 
     patches = [
