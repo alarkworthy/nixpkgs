@@ -65,7 +65,7 @@ stdenv.mkDerivation (finalAttrs: {
       owner = "notpeelz";
       repo = "monado";
       rev = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
-      hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+      hash = "sha256-ciH26Hyr8FumB2rQB5sFcXqtcQ1R84XOlphkkLBjzvA=";
     };
     # src = fetchFromGitLab {
     #   domain = "gitlab.freedesktop.org";
