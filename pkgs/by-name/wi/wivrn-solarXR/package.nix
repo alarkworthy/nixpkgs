@@ -57,7 +57,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = "notpeelz";
     repo = "WiVRn";
     rev = "bad7d792039f7509522de865fd2905807f3d2b8e";
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    hash = "sha256-DMrSgUtho32rcGaXDRQgEaSYHbRWuMnzjXZTUn2/eWc=";
   };
 
   monado = applyPatches {
