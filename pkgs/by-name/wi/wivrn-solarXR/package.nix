@@ -61,13 +61,19 @@ stdenv.mkDerivation (finalAttrs: {
   };
 
   monado = applyPatches {
-    src = fetchFromGitLab {
-      domain = "gitlab.freedesktop.org";
-      owner = "monado";
+    src = fetchFromGitHub {
+      owner = "notpeelz";
       repo = "monado";
       rev = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
       hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
     };
+    # src = fetchFromGitLab {
+    #   domain = "gitlab.freedesktop.org";
+    #   owner = "monado";
+    #   repo = "monado";
+    #   rev = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
+    #   hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    # };
 
     patches = [
       #./force-enable-steamvr_lh.patch
