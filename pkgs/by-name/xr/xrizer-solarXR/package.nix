@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   src = fetchFromGitHub {
     owner = "SpookySkeletons";
     repo = "xrizer";
-    tag = "2a54e25bfac72afe4b695c7045dfb349efad76ed";
+    rev = "2a54e25bfac72afe4b695c7045dfb349efad76ed";
     hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
   };
 
