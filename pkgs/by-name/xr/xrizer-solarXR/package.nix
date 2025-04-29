@@ -18,7 +18,7 @@ rustPlatform.buildRustPackage rec {
     owner = "SpookySkeletons";
     repo = "xrizer";
     rev = "2a54e25bfac72afe4b695c7045dfb349efad76ed";
-    hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+    hash = "sha256-WyXlU2eU06+L/B9dUKAxPkD7JEXs3Yiz2+qNXkMNdEo=";
   };
 
   useFetchCargoVendor = true;
