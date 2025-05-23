@@ -61,11 +61,12 @@ stdenv.mkDerivation (finalAttrs: {
   };
 
   monado = applyPatches {
-    src = fetchFromGitHub {
-      owner = "notpeelz";
+    src = fetchFromGitLab {
+      domain = "gitlab.freedesktop.org";
+      owner = "monado";
       repo = "monado";
       rev = "2a6932d46dad9aa957205e8a47ec2baa33041076";
-      hash = "";
+      hash = "sha256-Bus9GTNC4+nOSwN8pUsMaFsiXjlpHYioQfBLxbQEF+0=";
     };
     # src = fetchFromGitLab {
     #   domain = "gitlab.freedesktop.org";
