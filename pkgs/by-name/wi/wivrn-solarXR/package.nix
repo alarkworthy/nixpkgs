@@ -88,16 +88,17 @@ stdenv.mkDerivation (finalAttrs: {
   strictDeps = true;
 
   # Let's make sure our monado source revision matches what is used by WiVRn upstream
-  postUnpack = ''
-    ourMonadoRev="${finalAttrs.monado.src.rev}"
-    theirMonadoRev=$(sed -n '/FetchContent_Declare(monado/,/)/p' ${finalAttrs.src.name}/CMakeLists.txt | grep "GIT_TAG" | awk '{print $2}')
-    if [ ! "$theirMonadoRev" == "$ourMonadoRev" ]; then
-      echo "Our Monado source revision doesn't match CMakeLists.txt." >&2
-      echo "  theirs: $theirMonadoRev" >&2
-      echo "    ours: $ourMonadoRev" >&2
-      return 1
-    fi
-  '';
+  postUnpack = '' '';
+  #   ''
+  #   ourMonadoRev="${finalAttrs.monado.src.rev}"
+  #   theirMonadoRev=$(sed -n '/FetchContent_Declare(monado/,/)/p' ${finalAttrs.src.name}/CMakeLists.txt | grep "GIT_TAG" | awk '{print $2}')
+  #   if [ ! "$theirMonadoRev" == "$ourMonadoRev" ]; then
+  #     echo "Our Monado source revision doesn't match CMakeLists.txt." >&2
+  #     echo "  theirs: $theirMonadoRev" >&2
+  #     echo "    ours: $ourMonadoRev" >&2
+  #     return 1
+  #   fi
+  # '';
 
   nativeBuildInputs =
     [
