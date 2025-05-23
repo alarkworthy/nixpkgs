@@ -56,16 +56,16 @@ stdenv.mkDerivation (finalAttrs: {
   src = fetchFromGitHub {
     owner = "notpeelz";
     repo = "WiVRn";
-    rev = "bad7d792039f7509522de865fd2905807f3d2b8e";
-    hash = "sha256-DMrSgUtho32rcGaXDRQgEaSYHbRWuMnzjXZTUn2/eWc=";
+    rev = "415bb70fd881e60a6bcaf95aaebc04eff0901e44";
+    hash = "";
   };
 
   monado = applyPatches {
     src = fetchFromGitHub {
       owner = "notpeelz";
       repo = "monado";
-      rev = "c80de9e7cacf2bf9579f8ae8c621d8bf16e85d6c";
-      hash = "sha256-ciH26Hyr8FumB2rQB5sFcXqtcQ1R84XOlphkkLBjzvA=";
+      rev = "2a6932d46dad9aa957205e8a47ec2baa33041076";
+      hash = "";
     };
     # src = fetchFromGitLab {
     #   domain = "gitlab.freedesktop.org";
